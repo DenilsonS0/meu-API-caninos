@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Amigo Canino - Adoção</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f0f8ff;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    header {
+      background-color: #1e90ff;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 2rem;
+    }
+    nav {
+      background-color: #4682b4;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    main {
+      flex: 1;
+      padding: 30px;
+      display: flex;
+      justify-content: center;
+    }
+    #lista-animais {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      max-width: 1200px;
+    }
+    .animal {
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      padding: 15px;
+      width: 240px;
+      text-align: center;
+    }
+    .animal img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+    .animal h2 {
+      color: #333;
+      font-size: 1.2rem;
+    }
+    .animal p {
+      font-size: 0.9rem;
+      color: #555;
+    }
+    .botao-adotar {
+      margin-top: 10px;
+      background-color: #1e90ff;
+      border: none;
+      color: white;
+      padding: 8px 15px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    .botao-adotar:hover {
+      background-color: #0b76d1;
+    }
+    footer {
+      text-align: center;
+      padding: 15px;
+      background-color: #1e90ff;
+      color: white;
+    }
+  </style>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Amigo Canino</h1>
+    <p>Encontre seu novo melhor amigo!</p>
+  </header>
+  <nav>
+    <a href="index.html">Início</a>
+    <a href="cadastrar.html">Cadastrar Animal</a>
+    <a href="adotar.html">Adotar</a>
+    <a href="sobre.html">Sobre</a>
+  </nav>
+  <main>
+    <div id="lista-animais"></div>
+  </main>
+  <footer>&copy; 2025 Amigo Canino. Todos os direitos reservados.</footer>
+</body>
+</html>
+
+
